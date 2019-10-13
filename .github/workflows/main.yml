@@ -20,7 +20,7 @@ jobs:
         echo 'Docker login'
         docker login -u $DOCKER_HUB -p $DOCKER_HUB_KEY
         echo 'Running build.....'
-        docker build -t $DOCKER_HUB/echo-server .
+        docker build -t $DOCKER_HUB/greetings-server .
         echo 'Pushing image...'
-        docker push $DOCKER_HUB/echo-server
+        docker push $DOCKER_HUB/greetings-server
         echo 'Done!!!!'
